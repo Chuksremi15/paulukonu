@@ -91,7 +91,7 @@ p {
       font-size: 22px; }
 
 * {
-  font-family: 'Livvic', 'Lato', monospace;
+  font-family: 'Livvic', 'Lato';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -106,15 +106,15 @@ p {
   height: 700px; }
 
 .carousel-image-1 {
-  background: url("/src/img/home/sliderdisplay1.svg");
+  background: url("../img/home/sliderdisplay1.svg");
   background-size: cover; }
 
 .carousel-image-2 {
-  background: url("/src/img/home/sliderdisplay2.svg");
+  background: url("../img/home/sliderdisplay2.svg");
   background-size: cover; }
 
 .carousel-image-3 {
-  background: url("/src/img/home/sliderdisplay3.svg");
+  background: url("../img/home/sliderdisplay3.svg");
   background-size: cover; }
 
 .carousel-display-3 {
@@ -144,11 +144,11 @@ p {
   background-image: none; }
 
 .carousel-control-next-icon:after {
-  content: url("/src/img/home/Next.svg");
+  content: url("../img/home/Next.svg");
   font-size: 55px; }
 
 .carousel-control-prev-icon:after {
-  content: url("/src/img/home/Prev.svg");
+  content: url("../img/home/Prev.svg");
   font-size: 55px; }
 
 .homeImageIcon1 {
