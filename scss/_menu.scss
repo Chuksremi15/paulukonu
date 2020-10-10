@@ -1,0 +1,98 @@
+// Menu Button
+.menu-btn {
+  position: absolute;
+  z-index: 4;
+  left: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut;
+  }
+
+  // Rotate Into X With Menu Lines
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+
+// Menu Overlay
+.menu {
+  position: absolute;
+  top: 100px;
+  height: 40vh;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+  z-index: 3;
+
+  &.show {
+    visibility: visible;
+    z-index: 3;
+  }
+
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: lighten(white, 5);
+    transform: translate3d(0, -200%, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .current > a {
+    color: #000000;
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    color: gray;
+    transition: font-size, 0.2s;
+
+    &:hover {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import 'config';
+@import 'display';
+@import 'menu';
+
+* {
+  font-family: 'Livvic', 'Lato';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+}
+
+.containers {
+  max-width: 1800px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+.carousel-image-1 {
+  background: url('/src/img/home/sliderdisplay1.svg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('/src/img/home/sliderdisplay2.svg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('/src/img/home/sliderdisplay3.svg');
+  background-size: cover;
+}
+
+.carousel-display-3 {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 150px;
+  letter-spacing: 30px;
+  color: #ffffff;
+  opacity: 0.8;
+  position: relative;
+  animation-name: carouseldisplay3;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes carouseldisplay3 {
+  0% {
+    top: 1000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 200px;
+  width: 200px;
+
+  background-size: 100%, 100%;
+  // border-radius: 50%;
+  // border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: url('/src/img/home/Next.svg');
+  font-size: 55px;
+}
+
+.carousel-control-prev-icon:after {
+  content: url('/src/img/home/Prev.svg');
+  font-size: 55px;
+}
+
+.homeImageIcon1 {
+  width: 86px;
+  height: 70px;
+}
+
+.btnprimary {
+  background: #fff4e7;
+  font-weight: bold;
+
+  &:hover {
+    background: darken(#fff4e7, 5);
+  }
+}
+
+.contact {
+  border-top: solid 1px #6d6c6c;
+  border-bottom: solid 1px #6d6c6c;
+}
+
+@import 'mobile';
