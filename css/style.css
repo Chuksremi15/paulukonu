@@ -20,9 +20,6 @@ p {
 .myDisplay3 {
   font-size: 20px; }
 
-.creative {
-  width: 400px; }
-
 .shoot {
   color: #3a3838; }
 
@@ -84,14 +81,14 @@ p {
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0.5rem 0;
+    padding: 0.1rem 0;
     color: gray;
     transition: font-size, 0.2s; }
     .menu .nav-link:hover {
       font-size: 22px; }
 
 * {
-  font-family: 'Livvic', 'Lato';
+  font-family: 'Livvic', 'Lato', 'Courier New', Courier, monospace;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -184,7 +181,7 @@ p {
   .carousel-item {
     height: 400px; }
   .carousel-display-3 {
-    font-size: 65px;
+    font-size: 130px;
     letter-spacing: 0px; }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -207,6 +204,8 @@ p {
     width: 300px; } }
 
 @media screen and (max-width: 500px) {
+  .close .btn-line {
+    background: black; }
   .myDisplay1 {
     font-size: 35px; }
   .menu-btn {
@@ -217,9 +216,11 @@ p {
     position: fixed;
     top: 0;
     height: 100%;
-    width: 50%; }
+    width: 50%;
+    opacity: 1; }
     .menu-nav {
       height: 700px;
+      opacity: 1;
       overflow: hidden; }
     .menu-nav {
       margin: 0;

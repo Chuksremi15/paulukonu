@@ -32,7 +32,7 @@
   }
 
   .carousel-display-3 {
-    font-size: 65px;
+    font-size: 130px;
     letter-spacing: 0px;
   }
 
@@ -72,6 +72,13 @@
 
 // Smartphones
 @include mediaSm {
+  //Btn line
+  &.close {
+    .btn-line {
+      background: black;
+    }
+  }
+
   .myDisplay1 {
     font-size: 35px;
   }
@@ -87,9 +94,11 @@
     top: 0;
     height: 100%;
     width: 50%;
+    opacity: 1;
 
     &-nav {
       height: 700px;
+      opacity: 1;
       overflow: hidden;
     }
 
