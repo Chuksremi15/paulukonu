@@ -22,6 +22,19 @@
   height: 700px;
 }
 
+.myImg {
+  transform: translate3d(-1%, 0, 0);
+
+  @include easeOut;
+
+  &:hover {
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: 3px solid #fff4e7;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .carousel-image-1 {
   background: url('../img/home/sliderdisplay1.svg');
   background-size: cover;
@@ -44,19 +57,22 @@
   font-size: 150px;
   letter-spacing: 15px;
   color: #ffffff;
-  opacity: 0.8;
+
   position: relative;
   animation-name: carouseldisplay3;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
 @keyframes carouseldisplay3 {
   0% {
-    top: 1000px;
+    top: 500px;
+    opacity: 0.1;
   }
   100% {
     top: 0px;
+    opacity: 0.9;
   }
 }
 
