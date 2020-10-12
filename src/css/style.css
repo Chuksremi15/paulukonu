@@ -331,4 +331,10 @@ p {
   .myDisplay2 {
     font-size: 40px; }
   .creative {
-    width: 300px; } }
+    width: 300px; }
+  .showcase {
+    height: 150px; }
+  .showcaseDisplay {
+    height: 150px; }
+  .showcaseContent {
+    font-size: 50px; } }
