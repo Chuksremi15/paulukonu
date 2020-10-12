@@ -49,10 +49,29 @@
   background: url('../img/home/sliderdisplay3.svg');
   background-size: cover;
 }
+.caroselFa {
+  position: relative;
+  top: 300px;
+  opacity: 0;
+  animation-name: carouselFas;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes carouselFas {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .carousel-display-3 {
   font-family: 'Livvic';
-  font-style: normal;
+  top: 700px;
   font-weight: bold;
   font-size: 150px;
   letter-spacing: 15px;
@@ -67,11 +86,11 @@
 
 @keyframes carouseldisplay3 {
   0% {
-    top: 500px;
+    top: 700px;
     opacity: 0.1;
   }
   100% {
-    top: 0px;
+    top: 200px;
     opacity: 0.9;
   }
 }
@@ -114,6 +133,36 @@
 .contact {
   border-top: solid 1px #6d6c6c;
   border-bottom: solid 1px #6d6c6c;
+}
+
+.fa {
+  font-size: 20px;
+  padding: 1rem;
+  color: #818a91;
+  background-color: #f6f6f6;
+  border-radius: 60%;
+
+  &:hover {
+    color: #6d6c6c;
+    background-color: #fff4e7;
+  }
+}
+
+.showcase {
+  background: url('../img/contact/keith-misner-h0Vxgz5tyXA-unsplash\ \(1\).jpg');
+  height: 200px;
+}
+.showcaseDisplay {
+  color: white;
+  height: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcaseContent {
+  font-size: 100px;
 }
 
 @import 'mobile';

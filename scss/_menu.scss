@@ -1,6 +1,6 @@
 // Menu Button
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 4;
   left: 35px;
   top: 35px;
@@ -11,12 +11,16 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: white;
     @include easeOut;
   }
 
   // Rotate Into X With Menu Lines
   &.close {
+    .btn-line {
+      background: #000000;
+    }
+
     transform: rotate(180deg);
 
     .btn-line {
@@ -40,8 +44,8 @@
 
 // Menu Overlay
 .menu {
-  position: absolute;
-  top: 100px;
+  position: fixed;
+
   height: 40vh;
   width: 100%;
   opacity: 0.9;
