@@ -5,7 +5,7 @@
 @import 'menu';
 
 * {
-  font-family: 'Livvic', 'Lato', 'Courier New', Courier, monospace;
+  font-family: 'Livvic', 'Lato';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -149,7 +149,7 @@
 }
 
 .showcase {
-  background: url('../img/contact/keith-misner-h0Vxgz5tyXA-unsplash\ \(1\).jpg');
+  background: #616a64;
   height: 200px;
 }
 .showcaseDisplay {
@@ -162,7 +162,8 @@
 }
 
 .showcaseContent {
-  font-size: 100px;
+  font-size: 70px;
+  font-weight: bolder;
 }
 
 @import 'mobile';
