@@ -99,13 +99,14 @@
 
   .menu-btn {
     position: fixed;
-    left: 15px;
+    right: 15px;
     top: 15px;
   }
 
   .menu {
     position: fixed;
     top: 0;
+    left: 50%;
     height: 100%;
     width: 50%;
     opacity: 1;
@@ -122,7 +123,7 @@
       font-weight: bold;
       list-style: none;
       background: lighten(white, 5);
-      transform: translate3d(-200%, 0, 0);
+      transform: translate3d(200%, 0, 0);
       @include easeOut;
 
       &.show {
