@@ -6,6 +6,18 @@ p {
 p {
   font-family: 'Lato'; }
 
+.logo-text {
+  font-family: 'Livvic';
+  font-weight: bolder;
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+  .logo-text:hover {
+    text-decoration: none;
+    color: #fff; }
+
 .myDisplay1 {
   font-family: 'Livvic';
   font-weight: bolder;
@@ -24,11 +36,30 @@ p {
   color: #000000;
   font-size: 20px; }
 
+.comingSoonText {
+  font-family: 'Livvic';
+  font-weight: bolder;
+  color: #fff;
+  font-size: 100px;
+  z-index: 2; }
+
 .shoot {
   color: #3a3838; }
 
+.menu-logo {
+  position: absolute;
+  z-index: 4;
+  left: 50px;
+  top: 25px;
+  text-decoration: none;
+  cursor: pointer; }
+  .menu-logo:hover {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 35px; }
+
 .menu-btn {
-  position: fixed;
+  position: absolute;
   z-index: 4;
   right: 35px;
   top: 35px;
@@ -52,7 +83,7 @@ p {
       transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {
-  position: fixed;
+  position: absolute;
   height: 40vh;
   width: 100%;
   opacity: 1;
@@ -85,6 +116,7 @@ p {
     display: inline-block;
     position: relative;
     font-size: 20px;
+    font-family: bolder;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.1rem 0;
@@ -101,7 +133,7 @@ p {
   overflow-x: none; }
 
 .containers {
-  max-width: 1800px;
+  max-width: 1400px;
   margin: auto;
   position: relative; }
 
@@ -205,13 +237,28 @@ p {
     color: #6d6c6c;
     background-color: #fff4e7; }
 
+.fa-facebook {
+  padding: 1rem 1.2rem; }
+
 .showcase {
   background: #616a64;
-  height: 200px; }
+  height: 300px; }
+
+.showcase1 {
+  background: #616a64;
+  height: 900px; }
 
 .showcaseDisplay {
   color: white;
-  height: 200px;
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+
+.showcaseDisplay1 {
+  color: white;
+  height: 900px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -220,6 +267,25 @@ p {
 .showcaseContent {
   font-size: 70px;
   font-weight: bolder; }
+
+.comingSoon {
+  background: url(../img/home/gallery/IMG_2928-Edit.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+  .comingSoon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 1400px;
+    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.9); }
 
 @media screen and (min-width: 1171px) {
   .carousel-item {
@@ -237,6 +303,13 @@ p {
     letter-spacing: 0px; } }
 
 @media screen and (max-width: 768px) {
+  .menu-logo {
+    left: 25px;
+    top: 15px; }
+  .logo-text {
+    font-size: 30px; }
+  .comingSoonText {
+    font-size: 60px; }
   .carousel-item {
     height: 350px; }
   .caroselFa {
@@ -272,6 +345,9 @@ p {
     width: 300px; } }
 
 @media screen and (max-width: 500px) {
+  .menu-logo {
+    left: 15px;
+    top: 5px; }
   .close .btn-line {
     background: black; }
   .myDisplay1 {
@@ -340,8 +416,8 @@ p {
   .creative {
     width: 300px; }
   .showcase {
-    height: 150px; }
+    height: 200px; }
   .showcaseDisplay {
-    height: 150px; }
+    height: 200px; }
   .showcaseContent {
     font-size: 50px; } }

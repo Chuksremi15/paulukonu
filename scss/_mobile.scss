@@ -26,6 +26,18 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  .menu-logo {
+    left: 25px;
+    top: 15px;
+  }
+
+  .logo-text {
+    font-size: 30px;
+  }
+  .comingSoonText {
+    font-size: 60px;
+  }
+
   .carousel-item {
     height: 350px;
   }
@@ -86,6 +98,11 @@
 
 // Smartphones
 @include mediaSm {
+  .menu-logo {
+    left: 15px;
+    top: 5px;
+  }
+
   //Btn line
   &.close {
     .btn-line {
@@ -198,10 +215,10 @@
   }
 
   .showcase {
-    height: 150px;
+    height: 200px;
   }
   .showcaseDisplay {
-    height: 150px;
+    height: 200px;
   }
 
   .showcaseContent {

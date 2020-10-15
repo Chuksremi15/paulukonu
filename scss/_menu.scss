@@ -1,6 +1,21 @@
+.menu-logo {
+  position: absolute;
+  z-index: 4;
+  left: 50px;
+  top: 25px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 35px;
+  }
+}
+
 // Menu Button
 .menu-btn {
-  position: fixed;
+  position: absolute;
   z-index: 4;
   right: 35px;
   top: 35px;
@@ -44,7 +59,7 @@
 
 // Menu Overlay
 .menu {
-  position: fixed;
+  position: absolute;
 
   height: 40vh;
   width: 100%;
@@ -90,6 +105,7 @@
     display: inline-block;
     position: relative;
     font-size: 20px;
+    font-family: bolder;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.1rem 0;

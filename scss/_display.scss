@@ -2,6 +2,21 @@ p {
   font-family: 'Lato';
 }
 
+.logo-text {
+  font-family: 'Livvic';
+  font-weight: bolder;
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
 .myDisplay1 {
   font-family: 'Livvic';
   font-weight: bolder;
@@ -21,6 +36,14 @@ p {
   font-weight: bolder;
   color: #000000;
   font-size: 20px;
+}
+
+.comingSoonText {
+  font-family: 'Livvic';
+  font-weight: bolder;
+  color: #fff;
+  font-size: 100px;
+  z-index: 2;
 }
 
 .shoot {
